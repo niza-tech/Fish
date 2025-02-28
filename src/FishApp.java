@@ -1,11 +1,14 @@
 import java.util.Scanner;
 
 public class FishApp {
-    Scanner scanner = new Scanner(System.in); //flyt til main senere?
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in); //flyt til main senere?
+        fishTankApp(scanner);
 
+    }
 
     //Menu (mangler)
-    public static void fishTankApp (Scanner scanner) {
+    public static void fishTankApp(Scanner scanner) {
         int choice;
 
         while (true) {

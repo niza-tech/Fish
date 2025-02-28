@@ -3,19 +3,20 @@ public class Fish {
     private String name;
     private String healthStatus;
 
-    //Constructur
+    //Constructor
     public Fish(String name, String healthStatus) {
         this.name = name;
         this.healthStatus = "Healthy";
     }
+
     //Getters and setters
 
-    public String getname() {
+    public String getName() {
         return name;
 
     }
 
-    public void setname() {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -34,9 +35,11 @@ public class Fish {
     }
 
     public String toString() {
-        System.out.println("FishList");
+        System.out.println("FishList:");
         return "Fish Name: " + name + "Health Status: " + healthStatus;
     }
+
 }
+
 
 

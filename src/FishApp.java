@@ -2,13 +2,14 @@ import java.util.Scanner;
 
 public class FishApp {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in); //flyt til main senere?
+        Scanner scanner = new Scanner(System.in);
         fishTankApp(scanner);
 
     }
 
     //Menu (mangler)
     public static void fishTankApp(Scanner scanner) {
+        FishTank fishTank = new FishTank()
         int choice;
 
         while (true) {
@@ -24,6 +25,7 @@ public class FishApp {
             switch (choice) {
                 case 1:
                     System.out.println("List of fish status...");
+
                     break;
                 case 2:
                     System.out.println("Updating fish health...");

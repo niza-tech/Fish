@@ -5,16 +5,19 @@ import java.util.Scanner;
 public class FishTank {
 
     private String lastWaterChange;
-    private String waterQuality;
+    private WaterQuality waterQuality;
+    private Fish Wogglie;
+    private Fish Swimmie;
 
-    public FishTank(String lastWaterChange, String waterQuality) {
+    public FishTank(String lastWaterChange, WaterQuality waterQuality) {
         this.lastWaterChange = lastWaterChange;
         this.waterQuality = waterQuality;
+
+        this.Wogglie = new Fish("Wogglie", "Healthy");
+        this.Swimmie = new Fish("Svimmie", "Healthy");
     }
 
-    public enum waterQuality {
-        perfekt, godt, okay, dårlig
-    }
+
 
     //Method to update water info
     public void changeWater(Scanner scanner) {

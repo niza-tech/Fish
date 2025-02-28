@@ -18,9 +18,13 @@ public class FishTank {
 
     //Method to update water info
     public void changeWater(Scanner scanner) {
-        System.out.println(LocalDateTime.now() + "Enter comment: ");
+        lastWaterChange = LocalDateTime.now().toString();
+        System.out.println(lastWaterChange + "Enter comment: ");
         String comment = scanner.nextLine();
+
     }
-    public String toString(){
-        return "Last water change: " + name + , "Health Status: " + healthStatus;
+
+    public String toString() {
+        return "Last water change: " + lastWaterChange;
+    }
 }
